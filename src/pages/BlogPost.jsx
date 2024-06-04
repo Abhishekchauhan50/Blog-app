@@ -22,8 +22,8 @@ function BlogPost() {
     useEffect(() => {
         firebase.getData()
             .then((doc) => {
-                console.log(doc.docs[0].id);
-                setBlogData(doc.docs); // Setting the blog data
+                
+                setBlogData(doc.docs); 
             })
             .catch((err) => console.log(err));
     }, []);
@@ -74,7 +74,7 @@ function BlogPost() {
         </div>
         <div className=' font-medium w-full flex-wrap   text-xl py-20 lg:px-40 '>
             <p>
-            {/* {console.log(blogData[id].data().imageUrl)} */}
+           
             {blogData[id].data().blogText}
             </p>
         </div>
@@ -92,24 +92,3 @@ function BlogPost() {
 
 export default BlogPost
 
-// {<div className='w-full min-h-screen flex   flex-col gap-5 items-center px-24 py-24 '>
-// <div className=' font-medium flex flex-col items-center gap-10'>
-//     <h1 className=' border px-3 rounded-lg  bg-indigo-400 '>
-//         Author: <span>Abhishek Chauhan</span>
-//     </h1>
-//     <h1 className='text-6xl'>
-//         The awesome headline of the blog post goes-
-//     </h1>
-//     <h1 className=' border px-3 rounded-lg   bg-indigo-400 '>
-//         Date <span>12-12-2001</span>
-//     </h1>
-// </div>
-// <div  className='border rounded-lg w-full min-h-[30rem]  '>
-//     <img src="" alt="" />
-// </div>
-// <div className=' font-medium py-20 '>
-//     <p>
-//         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias dicta asperiores, eaque omnis ratione illum, magni maxime veniam officiis similique quidem assumenda pariatur voluptatibus corrupti hic culpa cum animi nostrum saepe. Optio ratione, explicabo consequatur ex voluptates magnam? Ex minus est, tempore quos voluptate saepe ipsum ut libero dolores vero.
-//     </p>
-// </div>
-// </div>}

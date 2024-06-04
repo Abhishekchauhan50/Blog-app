@@ -14,8 +14,7 @@ function Signup() {
 
 
     const firebase = usefirebase()
-    console.log(firebase);
-
+    
     const handleSignup = (e)=>{
       e.preventDefault()
       firebase.createUser(email,password, userName)

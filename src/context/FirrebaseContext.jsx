@@ -43,7 +43,6 @@ export const FirebaseProvider = (props)=>{
     const createUser = async(email, password, displayName )=>{
         try {
             const  userCredential = await createUserWithEmailAndPassword(firebaseAuth,  email, password)
-            console.log(userCredential);
             await updateProfile(userCredential.user, {
                 displayName: displayName
             })
@@ -53,14 +52,7 @@ export const FirebaseProvider = (props)=>{
         }
     }
 
-    // const UpdateUserProfile = ()=>{
-    //     try {
-    //         const userCredential = await 
-    //     } catch (error) {
-    //        console.log('update Profile error', error); 
-    //     }
-    // }
-
+   
     const loginUser = async(email, password)=>{
         try {
             await signInWithEmailAndPassword(firebaseAuth, email, password)
@@ -111,7 +103,7 @@ export const FirebaseProvider = (props)=>{
             return await getDocs(collection(firebaseDB, "blogList"));
             
         } catch (error) {
-            console.log('Getting error while getting doc');
+            alert('Getting error while getting doc');
             throw error
         }
     }
@@ -120,7 +112,7 @@ export const FirebaseProvider = (props)=>{
         try {
           return await getDownloadURL(ref(firebaseStorage , path))  
         } catch (error) {
-            console.log('getting error while  loading imageURL', error);
+            alert('Getting error while  loading imageURL');
             throw error
         }
     }

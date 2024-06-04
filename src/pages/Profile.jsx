@@ -7,8 +7,7 @@ function Profile() {
     const firebase = usefirebase()
     const navigate =  useNavigate()
 
-    console.log(firebase.currentUser);
-    console.log(user);
+    
     useEffect(()=>{
         setUser(firebase.currentUser)
     }, [firebase])

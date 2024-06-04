@@ -7,7 +7,7 @@ function Home() {
 
     const firebase = usefirebase()
     const user = firebase.currentUser
-    console.log(user);
+    
 
   return (
     <>
