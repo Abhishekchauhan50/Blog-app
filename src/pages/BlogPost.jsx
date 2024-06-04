@@ -69,7 +69,7 @@ function BlogPost() {
                 Date :<span> {blogData[id].data().createdData}</span>
             </h1>
         </div>
-        <div  className='  rounded-lg overflow-hidden w-full lg:w-[50rem]  '>
+        <div  className='  rounded-lg overflow-hidden w-full p-2  lg:w-[50rem]  '>
             <img className='w-full h-full bg-cover' src={`${imageULI}`} alt="" />
         </div>
         <div className=' font-medium w-full flex-wrap   text-xl py-20 lg:px-40 '>

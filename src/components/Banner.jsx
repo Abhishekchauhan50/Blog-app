@@ -9,7 +9,7 @@ function Banner() {
             <p className='text-xl lg:text-4xl font-medium '>Where Curiosity Meets Connection</p>
             <p className='w-[100%] lg:text-xl  font-medium '>Uncover a world of perspectives, engage in meaningful conversations, and be inspired by the journey.</p>
         </div>
-       <div  className='w-[60rem] flex  justify-center  rounded-xl   overflow-hidden my-16 '>
+       <div  className='w-full h-full flex  justify-center  rounded-xl   overflow-hidden my-16 '>
         <img className='  w-full bg-cover object-fill ' src="https://i.pinimg.com/originals/31/97/b8/3197b8ba55563b0747921bbeb851c838.gif" alt="" />
         </div> 
     </div>
