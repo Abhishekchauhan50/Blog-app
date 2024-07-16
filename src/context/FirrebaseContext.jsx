@@ -93,7 +93,7 @@ export const FirebaseProvider = (props)=>{
             
             
         } catch (error) {
-            alert('Getting error while adding doc ');
+            console.log('error in doc adding', error);
             throw error
         }
     }
@@ -103,7 +103,7 @@ export const FirebaseProvider = (props)=>{
             return await getDocs(collection(firebaseDB, "blogList"));
             
         } catch (error) {
-            alert('Getting error while getting doc');
+            console.log('Getting error while getting doc', error);;
             throw error
         }
     }
