@@ -62,7 +62,7 @@ function BlogPost() {
             <h1 className=' border px-3 rounded-lg  bg-indigo-400 '>
                 Author: <span>{blogData[id].data().userName}</span>
             </h1>
-            <h1 className='text-3xl text-red-500 md:text-6xl lg:text-8xl '>
+            <h1 className='text-3xl text-indigo-500 md:text-6xl lg:text-8xl '>
             {blogData[id].data().title}
             </h1>
             <h1 className=' border px-3 rounded-lg   bg-indigo-400 '>
